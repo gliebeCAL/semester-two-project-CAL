@@ -1,0 +1,9 @@
+02-02-15:
+	*Created github repository
+	*Started to write Second Semester Programming Plan
+	*Begun research on Lua
+	*Learning more about C++
+02-04-15:
+	*
+02-06-15:
+	*
