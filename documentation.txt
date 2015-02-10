@@ -10,3 +10,5 @@
 02-06-15:
 	*Researching TMUX for more efficient work
 	*Had Network issues during class, unable to do much until the end of class
+02-10-15:
+	*Reconfiguring work environment
