@@ -12,3 +12,5 @@
 	*Had Network issues during class, unable to do much until the end of class
 02-10-15:
 	*Reconfiguring work environment
+02-12-15:
+	*Reviewing C++
