@@ -14,3 +14,9 @@
 	*Reconfiguring work environment
 02-12-15:
 	*Reviewing C++
+02-15-15:
+	*Learning make system
+	*Setting up make system for mini project
+	*Created example project
+	*Make system functional
+	*Continuing to review C++
