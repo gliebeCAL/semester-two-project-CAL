@@ -20,3 +20,5 @@
 	*Created example project
 	*Make system functional
 	*Continuing to review C++
+02-17-15:
+	*Continuing to review C++
