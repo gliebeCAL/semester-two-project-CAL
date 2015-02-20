@@ -22,3 +22,5 @@
 	*Continuing to review C++
 02-17-15:
 	*Continuing to review C++
+02-19-15:
+	*Reviewing C++ the sequal the sequal
