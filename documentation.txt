@@ -31,3 +31,4 @@
 	*Did research on the String class in C++
 02-25-15:
 	*Brainstorming ideas for the main project in **brainstorm.txt**
+	*Started working on a new chalenge
