@@ -27,3 +27,7 @@
 02-20-15:
 	*Starting a coding chalenge
 	*Completed Coderbyte_Challenge_1
+02-23-15:
+	*Did research on the String class in C++
+02-25-15:
+	*Brainstorming ideas for the main project in **brainstorm.txt**
