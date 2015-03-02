@@ -6,7 +6,7 @@
 	*Looking into CMake
 02-04-15:
 	*Finished Plan
-	*Updated README.md and created code-chalenges
+	*Updated README.md and created code-challenges
 02-06-15:
 	*Researching TMUX for more efficient work
 	*Had Network issues during class, unable to do much until the end of class
@@ -25,7 +25,7 @@
 02-19-15:
 	*Reviewing C++ the sequal the sequal
 02-20-15:
-	*Starting a coding chalenge
+	*Starting a coding challenge
 	*Completed Coderbyte_Challenge_1
 02-23-15:
 	*Did research on the String class in C++
@@ -34,3 +34,5 @@
 	*Started working on a new challenge
 03-02-15:
 	*Looking into logbooks for this project (useful for documentation and comprehension)
+	*Created an idea in **brainstorm.txt**
+	*Fixed spelling of "chalenge" to "challenge"
