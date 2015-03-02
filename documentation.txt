@@ -31,4 +31,6 @@
 	*Did research on the String class in C++
 02-25-15:
 	*Brainstorming ideas for the main project in **brainstorm.txt**
-	*Started working on a new chalenge
+	*Started working on a new challenge
+03-02-15:
+	*Looking into logbooks for this project (useful for documentation and comprehension)
