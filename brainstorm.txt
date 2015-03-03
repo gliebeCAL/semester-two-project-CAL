@@ -1,3 +1,4 @@
-1. 	You have a terminal interface with scriptable commands created in Lua, and you have small tasks.
-	The player must complete tasks, and has to do them as fast as posible.  However, the given items are
-	slow.  As a result, it is encouraged to write your own Lua scripts that do the tasks faster.
+1.  	You have a fake-terminal-interface (FTI) created with C++. The user is given a task to do, and they
+	must use Lua scripts to solve it.
+
+2.	

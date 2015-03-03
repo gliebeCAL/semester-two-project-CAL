@@ -41,3 +41,4 @@
 	*Created a directory for mini-project-1 and mini-project-2
 	*Wrote out README.md files for both projects
 	*Repaired Makefile for both mini-projects
+	*Doing more work on **brainstorm.txt**
