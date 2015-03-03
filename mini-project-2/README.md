@@ -10,4 +10,4 @@ recorded in **documentation.txt**.
 ---------------------
 Project Goals:
 ---------------------
-1. Create a C++ Program that uses Lua scripts as modular items (eg. items, tools, etc.)
+1. Create a C++ Program that can use multiple Lua scripts to extend the use of the program in some way
