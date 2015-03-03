@@ -37,3 +37,7 @@
 	*Created an idea in **brainstorm.txt**
 	*Fixed spelling of "chalenge" to "challenge"
 	*Completed dailyprogrammer203 challenge
+03-03-15:
+	*Created a directory for mini-project-1 and mini-project-2
+	*Wrote out README.md files for both projects
+	*Repaired Makefile for both mini-projects
