@@ -36,3 +36,4 @@
 	*Looking into logbooks for this project (useful for documentation and comprehension)
 	*Created an idea in **brainstorm.txt**
 	*Fixed spelling of "chalenge" to "challenge"
+	*Completed dailyprogrammer203 challenge
