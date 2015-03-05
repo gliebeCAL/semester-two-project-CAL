@@ -42,3 +42,6 @@
 	*Wrote out README.md files for both projects
 	*Repaired Makefile for both mini-projects
 	*Doing more work on **brainstorm.txt**
+03-05-15:
+	*Changed /src directory structure (contains /lua and /cpp)
+	*Changed Makefile to reflect changes in /src directory changes

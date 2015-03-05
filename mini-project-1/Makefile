@@ -1,5 +1,5 @@
 CC = g++
-SRC = ~/Documents/semester-two-project-CAL/mini-project-1/src
+SRC = ~/Documents/semester-two-project-CAL/mini-project-1/src/cpp
 FILES = $(SRC)/*
 
 all: example
