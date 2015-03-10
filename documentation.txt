@@ -45,3 +45,5 @@
 03-05-15:
 	*Changed /src directory structure (contains /lua and /cpp)
 	*Changed Makefile to reflect changes in /src directory changes
+03-10-15:
+	*Working on Mini-Project-1 (lua, integration, etc.)
