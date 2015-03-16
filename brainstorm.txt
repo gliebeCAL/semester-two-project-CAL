@@ -1,4 +1,8 @@
-1.  	You have a fake-terminal-interface (FTI) created with C++. The user is given a task to do, and they
-	must use Lua scripts to solve it.
+Make a basic engine that uses Lua Scripts to do actions.  Ideally, new lua scripts should be added
+in a way that does not require the source or a recompile, but not necessary.
 
+Here is a list of ideas:
+
+1.  	You have a fake-terminal-interface (FTI) created with C++. The user is given a task to do, and they
+	must use given utilities (Lua scripts) to solve it.
 2.	

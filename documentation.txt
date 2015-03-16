@@ -6,7 +6,7 @@
 	*Looking into CMake
 02-04-15:
 	*Finished Plan
-	*Updated README.md and created code-challenges
+	*Updated **README.md** and created code-challenges
 02-06-15:
 	*Researching TMUX for more efficient work
 	*Had Network issues during class, unable to do much until the end of class
@@ -39,7 +39,7 @@
 	*Completed dailyprogrammer203 challenge
 03-03-15:
 	*Created a directory for mini-project-1 and mini-project-2
-	*Wrote out README.md files for both projects
+	*Wrote out **README.md** files for both projects
 	*Repaired Makefile for both mini-projects
 	*Doing more work on **brainstorm.txt**
 03-05-15:
@@ -47,3 +47,6 @@
 	*Changed Makefile to reflect changes in /src directory changes
 03-10-15:
 	*Working on Mini-Project-1 (lua, integration, etc.)
+03-16-15:
+	*Reserching people's experiences with C++ and Lua integration
+	*Clarified goal of final project in **brainstorm.txt**
