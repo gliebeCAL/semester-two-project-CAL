@@ -50,3 +50,5 @@
 03-16-15:
 	*Reserching people's experiences with C++ and Lua integration
 	*Clarified goal of final project in **brainstorm.txt**
+03-20-15:
+	*Added more to **brainstorm.txt**
