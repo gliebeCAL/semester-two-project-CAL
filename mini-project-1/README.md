@@ -11,4 +11,3 @@ Project Goals:
 ---------------------
 1. Create a Lua script that does an action.
 2. Write a C++ program that can call the Lua script.
-3. Sucessfully change the Lua script while the C++ program runs.
