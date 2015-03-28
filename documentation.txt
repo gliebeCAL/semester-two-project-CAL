@@ -52,3 +52,6 @@
 	*Clarified goal of final project in **brainstorm.txt**
 03-20-15:
 	*Added more to **brainstorm.txt**
+03-27-15:
+	*Made a brief change to the README
+	*

@@ -6,4 +6,4 @@ Here is a list of ideas:
 1.  	You have a fake-terminal-interface (FTI) created with C++. The user is given a task to do, and they
 	must use given utilities (Lua scripts) to solve it.
 2.	Create a tool that can organize files or the contents of a text file based on what Lua script is used
-3.	Make a **basic** rpg that uses C++ to run Lua scripts that interact with the engine.  
+3.	Make a **basic** rpg that uses C++ to run Lua scripts that interact with the engine.
