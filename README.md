@@ -3,6 +3,6 @@
 This repository store files related to my second semester project.  
 
 **documentation.txt** stores the progress made each class period.
-**code-chalanges** contains my solutions to any code chalenges I do.  
+**code-challanges** contains my solutions to any code challenges I do.  
 **brainstorm.txt** stores the ideas for the semester project.  
 
