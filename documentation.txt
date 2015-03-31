@@ -52,7 +52,18 @@
 	*Clarified goal of final project in **brainstorm.txt**
 03-20-15:
 	*Added more to **brainstorm.txt**
+03-24-15:
+	*Running into Lua issues (not wanting to compile)
+	*Compliler claimes that luaL_open(L); is not being referenced
+	*Unable to find the issue so far
 03-27-15:
 	*Made a brief change to the README
 	*Deleated Mini-Project-2 because it was not necessary
 	*Fixed another misspelling of 'chalenge' in README.md
+03-30-15:
+	*FINALLY DISCOVERED MY ISSUES (lua embedded files not compiling)
+	*Removed lua from the system, and now in the process of manually installing it
+	*Lua manually installed, and can now be properly linked to
+	*Still unable to manually declare a state and open files
+	*Decision: Trying out Luabind in order to make the lua state process easier
+	*Decision: The Semester Project will be to make a basic game that has all low level stuff handled by C++, and everything higher leveled (eg. weapons, animations, etc.) happen in Lua.  Compromises can be made with regards to using Lua for everything if necessary
