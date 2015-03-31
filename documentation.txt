@@ -67,3 +67,4 @@
 	*Still unable to manually declare a state and open files
 	*Decision: Trying out Luabind in order to make the lua state process easier
 	*Decision: The Semester Project will be to make a basic game that has all low level stuff handled by C++, and everything higher leveled (eg. weapons, animations, etc.) happen in Lua.  Compromises can be made with regards to using Lua for everything if necessary
+	*Cleaned up README.md and added more information
