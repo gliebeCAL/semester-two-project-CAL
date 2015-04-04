@@ -81,3 +81,6 @@
 	*Added feature's to Mini-Project-1's Makefile (clean bin, move lua scripts to bin, updated compile command)
 	*Updated README.md for Mini-Project-1 (cleaned up messed up markdown)
 	*Completed Mini-Project-1
+04-03-15:
+	*Started working on the Final Project (setting up directories and Makefile)
+	*Thinking about starting a challenge (not sure yet; Coderbyte challange 2)
