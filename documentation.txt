@@ -84,3 +84,8 @@
 04-03-15:
 	*Started working on the Final Project (setting up directories and Makefile)
 	*Thinking about starting a challenge (not sure yet; Coderbyte challange 2)
+04-06-15:
+	*Found some examples done with C and Lua (https://github.com/adamwiggins/lua-pong/)
+	*Most likely making a text adventure style game at the moment
+	*Decided that this is going to be a text adventure game
+	*The indev name is Project Ysgramor

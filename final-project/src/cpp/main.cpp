@@ -1,22 +1,21 @@
+// Project Title:	Project Ysgramor
+// Author:		Joey Gliebe
+// Started:		04-06-15
+// Finished:		N/A
+// Description:		A text-based adventure game
+
 extern "C" {
-	    #include <lua.h>
-	    #include <lauxlib.h>
-	    #include <lualib.h>
+	#include <lua.h>
+	#include <lauxlib.h>
+	#include <lualib.h>
 }
 
 int main()
 {
-	// This loads a new state
-	lua_State* L = luaL_newstate();
-
-	// This loads the necessary libraries for lua to do various things
-	luaL_openlibs(L);
-
-	// This runs a file in a specified state eg. L
-	luaL_dofile(L,"test.lua");
-
-	// This destroys the lua state.  Usually not necessary, but safer than not
-	lua_close(L);
+	lua_State* L = luaL_newstate();		// This loads a new state
+	luaL_openlibs(L);			// This loads the standard libraries used in Lua for various operations
+	luaL_dofile(L,"test.lua");		// This runs a file in the specified state eg. L
+	lua_close(L); 				// This destroys the lua state.  Usually not necessary, but safer than not
 
 	return 0;
 }
