@@ -1,13 +1,14 @@
 // Project Title:	Project Ysgramor
 // Author:		Joey Gliebe
 // Started:		04-06-15
-// Finished:		N/A
+// Version:		0.0a
 // Description:		A text-based adventure game
 
-extern "C" {
-	#include <lua.h>
-	#include <lauxlib.h>
-	#include <lualib.h>
+extern "C"
+{
+#include <lua.h>
+#include <lauxlib.h>
+#include <lualib.h>
 }
 
 int main()

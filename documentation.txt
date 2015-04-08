@@ -89,3 +89,7 @@
 	*Most likely making a text adventure style game at the moment
 	*Decided that this is going to be a text adventure game
 	*The indev name is Project Ysgramor
+04-08-15:
+	*Created battle.lua
+	*Created design.md for final-project (contains all ideas for the design of systems/gameplay)
+	*Currently designing battle.lua

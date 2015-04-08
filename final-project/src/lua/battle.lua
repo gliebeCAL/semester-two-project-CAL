@@ -1,0 +1,2 @@
+-- File:	battle.lua --
+-- Purpose:	starts a battle
