@@ -93,3 +93,6 @@
 	*Created battle.lua
 	*Created design.md for final-project (contains all ideas for the design of systems/gameplay)
 	*Currently designing battle.lua
+04-10-15:
+	*Reading more lua stuff
+	*
