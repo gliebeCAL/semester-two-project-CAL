@@ -95,4 +95,5 @@
 	*Currently designing battle.lua
 04-10-15:
 	*Reading more lua stuff
-	*
+	*Worked on more design stuff for final-project
+	*Created more folders for organization w/ lua files (players, enemies, items), which makes it easy to find and edit the lua files
