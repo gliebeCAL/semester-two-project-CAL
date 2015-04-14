@@ -12,11 +12,6 @@ Drawing Board
 	*Leveling system, or equipment based?
 *Enemies
 *Encounters
-	*What kind of encounters should there be? (Will definately be turn based)
-		*Final Fantasy style (left and right sides)
-			*Older (no concept of rows), or newer (front/back row)?
-		*Mother/Earthbound style (top and bottom)
-		*Etrian Odyssey style (top and bottom + front/back rows)
 *Story
 	*Needs a story; yes or no?
 		*FOR YES
@@ -42,6 +37,15 @@ Complete Ideas
 
 Accepted Ideas
 -----------------------------
+*Encounters
+	*What kind of encounters should there be?
+		*Etrian Odyssey style (modified)
+			*EXPLAINATION + DETAILS HERE
 
-Failed Ideas
+Rejected Ideas
 -----------------------------
+*Encounters
+	*What kind of encounters should there be? (Will definately be turn based)
+			*Final Fantasy style (left and right sides)
+				*Older (no concept of rows), or newer (front/back row)?
+			*Mother/Earthbound style (top and bottom)
