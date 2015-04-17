@@ -96,8 +96,12 @@
 04-10-15:
 	*Reading more lua stuff
 	*Worked on more design stuff for final-project
-	*Created more folders for organization w/ lua files (players, enemies, items), which makes it easy to find and edit the lua files
+	*Created more folders for organization w/ lua files (players, enemies, items), which makes it
+	 easy to find and edit the lua files
 04-12-15:
 	*Cleaned up README.md a bit more
 04-14-15:
 	*Worked on even more design stuff for final-project
+04-16-15:
+	*Continuing the necessary work in the design department.  I am spending a good amount of time
+	 planning so I do not get off track or bite off more than I can chew.
