@@ -15,13 +15,17 @@ Drawing Board
 		*FOR Levels
 		*FOR Equipment
 		*FOR Mixture
+	*Commander and Army (Army is a single entity with lots of stats, but is buffed or debuffed easily.  Commander controls stat boosts and the like while having (much) lower stats.)
+		*FOR Yes
+		*FOR No
 *Enemies
 *Encounters
 *Story
-	*Needs a story; yes or no?
-		*FOR YES
-		*FOR NO
 *Input
+	*Predefined keys, or written commands?
+		*FOR Predefined keys (WSAD for menu movement, etc.)
+		*FOR Written Commands (Writing "move up" for moving up, etc.)
+*Graphics
 *Saving
 	*SHOULD there be saving?
 		*FOR Saving
@@ -50,6 +54,11 @@ Accepted Ideas
 	*What kind of encounters should there be?
 		*Etrian Odyssey style (modified)
 			*EXPLAINATION + DETAILS HERE
+*Story
+	*Going to be given a background about your goal and you do the missions
+*Graphics
+	*Descriptions
+		*Going to use textual descriptions since it allows for faster content creation
 
 Rejected Ideas
 -----------------------------
@@ -58,3 +67,7 @@ Rejected Ideas
 			*Final Fantasy style (left and right sides)
 				*Older (no concept of rows), or newer (front/back row)?
 			*Mother/Earthbound style (top and bottom)
+*Graphics
+	*Should there be graphics (ASCII ART) or just textual representations?
+		*FOR Graphics
+			*Looks more professional
