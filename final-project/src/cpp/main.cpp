@@ -1,10 +1,12 @@
-// Project Title:	Project Ysgramor
-// Author:		Joey Gliebe
-// Started:		04-06-15
-// Version:		0.0a
-// Description:		A text-based adventure game
+//////////////////////////////////////////////////////
+// Project Title:	Project Ysgramor            //
+// Author:		Joey Gliebe                 //
+// Started:		04-06-15                    //
+// Version:		0.0                         //
+// Description:		A text-based adventure game //
+//////////////////////////////////////////////////////
 
-extern "C"
+extern "C"  // Include lua headers
 {
 #include <lua.h>
 #include <lauxlib.h>

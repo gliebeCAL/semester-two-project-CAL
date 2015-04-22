@@ -108,3 +108,5 @@
 04-20-15:
 	*Worked on Design document more
 	*Planning for presentation
+04-21-15:
+	*Fleshed out more of the design document
