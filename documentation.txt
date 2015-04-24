@@ -110,3 +110,5 @@
 	*Planning for presentation
 04-21-15:
 	*Fleshed out more of the design document
+04-23-15:
+	*Setting up computer again (installed a new system, so taking time to fix things)
