@@ -12,27 +12,8 @@ Drawing Board
 	*Encounters
 	*Story
 	*Input
-		*Predefined keys, or written commands?
-			*FOR Predefined keys (WSAD for menu movement, etc.)
-			*FOR Written Commands (Writing "move up" for moving up, etc.)
 	*Graphics
 	*Saving
-		*SHOULD there be saving?
-			*FOR Saving
-				*Allows for pauses in gameplay
-			*FOR Not Saving
-				*Saving is not necessary
-				*Takes time to make a save system
-		*What format should the save file be? (If there is saving)
-			*FOR *.txt
-				*Easy to modify
-				*Easy to create
-				*Human readable
-			*FOR *.save
-				*Less intuitive to modify
-				*Not as human readable
-			*FOR *.lua
-				*Can be manipulated as a *.lua file
 
 Complete Ideas
 -----------------------------
@@ -47,6 +28,8 @@ Accepted Ideas
 				*Hidden equipment can be found through exploration
 		*Create characters, or pre-defined characters?
 			*Pre-defined Characters
+	*Enemies
+		*
 	*Encounters
 		*What kind of encounters should there be?
 			*Etrian Odyssey style (modified)
@@ -57,12 +40,27 @@ Accepted Ideas
 				*The respective *.lua files for the player characters would load and save information to and from a *.txt file (or some other format)
 				*battle.cpp would call lua functions, perform the battle, and save the changes for the player characters at the end of battle
 					*Depending on future decisions, I may have no save system, so I might end up with holding the values in memory if I decide against saves
+	*Story
+		*
+	*Input
+		*What input system should there be?
+			*Written Commands (Writing "move up" for moving up, etc.)
 	*Graphics
 		*Descriptions
 			*Going to use textual descriptions since it allows for faster content creation
+	*Saving
+		*Should there be a save system
+			*No Saving
+				*Saving is not necessary
+				*Takes time to make a save system
 
 Rejected Ideas
 -----------------------------
+	*Player Characters
+		*Leveling system, or equipment based
+			*Leveling
+				*Traditional
+				*
 	*Encounters
 		*What kind of encounters should there be? (Will definately be turn based)
 			*Final Fantasy style (left and right sides)
@@ -77,3 +75,6 @@ Rejected Ideas
 		*Should there be graphics (ASCII ART) or just textual representations?
 			*FOR Graphics
 				*Looks more professional
+	*Input
+		*What input system?
+			*Predefined keys (WSAD for menu movement, etc.)

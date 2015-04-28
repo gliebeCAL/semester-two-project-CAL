@@ -112,3 +112,8 @@
 	*Fleshed out more of the design document
 04-23-15:
 	*Setting up computer again (installed a new system, so taking time to fix things)
+04-27-15:
+	*Everything is working!  Huzzah!
+	*Almost done with design (stuff on enemies and story then done)
+	*Added menu.cpp
+	*Edited battle.cpp (just the header format)
