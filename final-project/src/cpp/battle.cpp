@@ -5,8 +5,14 @@
 // Version:             0.0                         //
 // Description:         A text-based adventure game //
 // ------------------------------------------------ //
-// Filename: 		menu.cpp                    //
+// Filename: 		battle.cpp                  //
 // Created: 		04-27-15                    //
-// Description: 	Display a menu and accept   //
-// 			options                     //
+// Description: 	A combat sequence that      //
+// 			ends in either success or   //
+// 			failure                     //
 //////////////////////////////////////////////////////
+
+void battle()
+{
+
+}

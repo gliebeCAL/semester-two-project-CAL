@@ -117,3 +117,6 @@
 	*Almost done with design (stuff on enemies and story then done)
 	*Added menu.cpp
 	*Edited battle.cpp (just the header format)
+04-29-15:
+	*Started to create the menu for the game in menu.cpp
+	*Did some more work on setting up the cpp files
