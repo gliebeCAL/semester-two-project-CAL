@@ -8,7 +8,6 @@ This document exists as a place to put ideas, sketches and the like for the fina
 Drawing Board
 -----------------------------
 	*Player Characters
-	*Enemies
 	*Encounters
 	*Story
 	*Input
@@ -28,8 +27,6 @@ Accepted Ideas
 				*Hidden equipment can be found through exploration
 		*Create characters, or pre-defined characters?
 			*Pre-defined Characters
-	*Enemies
-		*
 	*Encounters
 		*What kind of encounters should there be?
 			*Etrian Odyssey style (modified)
@@ -41,7 +38,8 @@ Accepted Ideas
 				*battle.cpp would call lua functions, perform the battle, and save the changes for the player characters at the end of battle
 					*Depending on future decisions, I may have no save system, so I might end up with holding the values in memory if I decide against saves
 	*Story
-		*
+		*Currently none
+			*If there is time, I will develop a story
 	*Input
 		*What input system should there be?
 			*Written Commands (Writing "move up" for moving up, etc.)
