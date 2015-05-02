@@ -120,3 +120,18 @@
 04-29-15:
 	*Started to create the menu for the game in menu.cpp
 	*Did some more work on setting up the cpp files
+05-01-15:
+	*Issue with displaying menu
+		*Escape issue ( using \ makes compiler get confused with escaping characters)
+		*Now it is not displaying (unsure why)
+		*Escaping the characters does not help
+		*FIXED ISSUE: The wrong characters were being escaped --- now displays
+	*Declarations broken (debugger not stating where error lies)
+		*Fixed issue: Typo found in menu.h (wrote like a function, not a declaration) --- properly declared now
+	*A (nonfunctional) menu now displays on launch
+	*Added new files (clearScreen.cpp and clearScreen.h)
+		*clearScreen holds a function that can clear the terminal screen, which will be very useful
+	*Started laying out battle.cpp
+		*Added success and failure functions
+		*Added a function for the start of battle
+		*Created a function to be the main loop for the battle

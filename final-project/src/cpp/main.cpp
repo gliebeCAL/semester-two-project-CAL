@@ -10,13 +10,23 @@
 // Description: 	main loop of the program    //
 //////////////////////////////////////////////////////
 
-// NOTE: If #includes get heavy, make headers
-
+/*
 extern "C"  // Include lua headers
 {
 #include <lua.h>
 #include <lauxlib.h>
 #include <lualib.h>
+}
+*/
+
+#include "menu.h"
+#include "clearScreen.h"
+
+void startUp()
+{
+	//find command to clear screen
+	clearScreen();
+	menuDisplay();
 }
 
 int main()
@@ -27,6 +37,7 @@ int main()
 	/* lua_close(L); 			// This destroys the lua state.  Usually not necessary, but safer than not */
 	// The above is being kept for future reference
 
+	startUp();
 
 	return 0;
 }

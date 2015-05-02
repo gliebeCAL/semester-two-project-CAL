@@ -12,7 +12,24 @@
 // 			failure                     //
 //////////////////////////////////////////////////////
 
-void battle()
+// Need a global variable that keeps track of location to decide who to fight
+
+void battleStart() // Starts at the begining of battle
+{
+
+}
+
+void battleSuccess() // Called at the end if the party wins
+{
+
+}
+
+void battleFailure() // Called at the end if the party loses
+{
+
+}
+
+void battleLoop() // Orders the loop of battle til one party loses or runs
 {
 
 }
