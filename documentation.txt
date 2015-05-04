@@ -135,3 +135,9 @@
 		*Added success and failure functions
 		*Added a function for the start of battle
 		*Created a function to be the main loop for the battle
+05-04-15:
+	*Added a bit to the menu's appearance (added "Project" above it)
+	*Wrote the function for choosing a menu's selection
+	*Added some code to startUp() that allows someone to either play the game or exit
+		*If someone does not type a legal value, it will rerun the prompt
+	*ISSUE: When inputing incorrect characters, the prompt will spam the "else" message

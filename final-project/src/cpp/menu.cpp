@@ -18,6 +18,8 @@ void menuDisplay() // Outputs the menu
 	using namespace std;
 	cout << "  __________________________________________________________________________________________________ " << endl;
 	cout << " |                                                                                                  |" << endl;
+	cout << " |                                             PROJECT:                                             |" << endl;
+	cout << " |                                                                                                  |" << endl;
 	cout << " | \\       /  _________  __________  ______      _____    ____          ____     ______    ______   |" << endl;
 	cout << " |  \\     /   |       |  |           |     \\    /     \\   |   \\        /   |    /      \\   |     \\  |" << endl;
 	cout << " |   \\   /    |          |           |      |  /       \\  |    \\      /    |   /        \\  |      | |" << endl;
@@ -32,9 +34,15 @@ void menuDisplay() // Outputs the menu
 	cout << " | 1. Play                                                                                          |" << endl;
 	cout << " | 2. Exit                                                                                          |" << endl;
 	cout << " |__________________________________________________________________________________________________|" << endl;
-}
-/* bool menuSelect() // Ask and listen for "1", "2" or "3" */
-/* { */
-	/* cout << */
 
-/* } */
+	cout << "\n}> ";
+}
+
+int menuSelection(int menu_answer)
+{
+	using namespace std;
+
+	cin >> menu_answer;
+
+	return menu_answer;
+}

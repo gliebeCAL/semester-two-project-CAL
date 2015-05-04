@@ -19,22 +19,42 @@ extern "C"  // Include lua headers
 }
 */
 
+#include <iostream>
 #include "menu.h"
 #include "clearScreen.h"
 
-void startUp()
+void startUp() // note: using a goto statement is not a good idea; fix it soon
 {
-	//find command to clear screen
+	using namespace std;
+
 	clearScreen();
 	menuDisplay();
+	int choice;
+	int result;
+
+tryAgain:
+
+	result = menuSelection(choice);
+	if (result == 1)
+		cout << "You are playing the game!!";
+	else if (result == 2)
+		cout << "Good bye!!";
+	else
+	{
+		cout << "Please!  Don't do this to me; just try again:\n\n}>";
+		goto tryAgain;
+	}
 }
 
 int main()
 {
-	/* lua_State* L = luaL_newstate();	// This loads a new state */
-	/* luaL_openlibs(L);			// This loads the standard libraries used in Lua for various operations */
-	/* luaL_dofile(L,"test.lua");		// This runs a file in the specified state eg. L */
-	/* lua_close(L); 			// This destroys the lua state.  Usually not necessary, but safer than not */
+	/*
+	lua_State* L = luaL_newstate();	// This loads a new state
+	luaL_openlibs(L);			// This loads the standard libraries used in Lua for various operations
+	luaL_dofile(L,"test.lua");		// This runs a file in the specified state eg. L
+	lua_close(L); 			// This destroys the lua state.  Usually not necessary, but safer than not
+	*/
+
 	// The above is being kept for future reference
 
 	startUp();
