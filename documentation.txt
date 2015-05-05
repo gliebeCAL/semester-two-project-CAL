@@ -141,3 +141,9 @@
 	*Added some code to startUp() that allows someone to either play the game or exit
 		*If someone does not type a legal value, it will rerun the prompt
 	*ISSUE: When inputing incorrect characters, the prompt will spam the "else" message
+05-05-15:
+	*Changed the formatting of the document header to be more visually appealing (in my opinion)
+	*Added more comments and cleaned up main.cpp
+	*Created a note about the issue from 05-04-15 in main.cpp for easy visibility
+	*Fixed ISSUE 1 from 05-04-15 (To read how it was fixed, go to main.cpp and read the three comments on it)
+	*Made a change to the Makefile in order to make it more friendly if it was 'git clone'd to another computer

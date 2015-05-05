@@ -2,6 +2,6 @@
 #define MENU_H
 
 void menuDisplay();
-int menuSelection(int menu_answer);
+int menuSelection(char answer);
 
 #endif

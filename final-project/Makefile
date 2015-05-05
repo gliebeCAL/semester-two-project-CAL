@@ -1,14 +1,15 @@
 CC = g++
-CPPSRC = ./src/cpp
-LUASRC = ./src/lua
+GITDIR = ~/Documents/semester-two-project-CAL/final-project
+CPPSRC = $(GITDIR)/src/cpp
+LUASRC = $(GITDIR)/src/lua
 CPPFILES = $(CPPSRC)/*.cpp
 LUAFILES = $(LUASRC)/*
 
-all: example
+all: clean build
 
-example:
+build:
 	$(CC) $(CPPFILES) -o ./bin/final-project -llua -ldl -lcurses
-	cp -rt ./bin $(LUAFILES)
+	cp -rt $(GITDIR)/bin $(LUAFILES)
 
 clean:
-	rm -rf ./bin/*
+	rm -rf $(GITDIR)/bin/*

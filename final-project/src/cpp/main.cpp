@@ -1,62 +1,68 @@
-//////////////////////////////////////////////////////
-// Project Title:	Project Ysgramor            //
-// Author:		Joey Gliebe                 //
-// Started:		04-06-15                    //
-// Version:		0.0                         //
-// Description:		A text-based adventure game //
-// ------------------------------------------------ //
-// Filename: 		main.cpp                    //
-// Created: 		04-27-15                    //
-// Description: 	main loop of the program    //
-//////////////////////////////////////////////////////
+// ------------------------------------------------
+// Project Title:	Project Ysgramor
+// Author:		Joey Gliebe
+// Started:		04-06-15
+// Version:		0.0
+// Description:		A text-based adventure game
+// ------------------------------------------------
+// Filename: 		main.cpp
+// Created: 		04-27-15
+// Description: 	main loop of the program
+// ------------------------------------------------
 
-/*
 extern "C"  // Include lua headers
 {
 #include <lua.h>
 #include <lauxlib.h>
 #include <lualib.h>
 }
-*/
 
 #include <iostream>
 #include "menu.h"
 #include "clearScreen.h"
 
-void startUp() // note: using a goto statement is not a good idea; fix it soon
+// ---------------------------------------------------------------------------------------------------------------------------
+// lua_State* L = luaL_newstate();	// This loads a new state
+// luaL_openlibs(L); 			// This loads the standard libraries used in Lua for various operations
+// luaL_dofile(L,"test.lua");		// This runs a file in the specified state (eg. L)
+// lua_close(L); 			// This destroys the lua state.  Usually not necessary, but safer than not
+//
+// The above is being kept for future reference
+// ---------------------------------------------------------------------------------------------------------------------------
+// Lua states need to be used within a function.  They do not work out of scope, which means it would have to be made global.
+// However, it is just safer to create a state for whatever function needs it, then closing it.
+// ---------------------------------------------------------------------------------------------------------------------------
+
+void startUp()
 {
 	using namespace std;
 
 	clearScreen();
 	menuDisplay();
-	int choice;
-	int result;
 
-tryAgain:
+	char answer;
 
-	result = menuSelection(choice);
-	if (result == 1)
-		cout << "You are playing the game!!";
-	else if (result == 2)
+	// ISSUE 1: else loops repeatedly when multiple incorrect responses given
+	// CAUSE: When multiple responses are given at once, it causes the system to accept multiple values, which causes it to check for both in the function
+	// SOLUTION: I made cin stream to a string variable, then set a char variable to the first character in the string array, which then would only send one value
+
+	tryAgain:
+
+	answer = menuSelection(answer);
+
+	if (answer == 'a')
+		cout << "You are playing the game!! Alas, it is not existant yet...";
+	else if (answer == 'b')
 		cout << "Good bye!!";
 	else
 	{
-		cout << "Please!  Don't do this to me; just try again:\n\n}>";
+		cout << "Please!  Don't do this to me; just try again:\n\n}> ";
 		goto tryAgain;
 	}
 }
 
 int main()
 {
-	/*
-	lua_State* L = luaL_newstate();	// This loads a new state
-	luaL_openlibs(L);			// This loads the standard libraries used in Lua for various operations
-	luaL_dofile(L,"test.lua");		// This runs a file in the specified state eg. L
-	lua_close(L); 			// This destroys the lua state.  Usually not necessary, but safer than not
-	*/
-
-	// The above is being kept for future reference
-
 	startUp();
 
 	return 0;

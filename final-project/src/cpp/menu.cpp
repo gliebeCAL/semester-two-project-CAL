@@ -1,17 +1,18 @@
-//////////////////////////////////////////////////////
-// Project Title:	Project Ysgramor            //
-// Author:		Joey Gliebe                 //
-// Started:		04-06-15                    //
-// Version:		0.0                         //
-// Description:		A text-based adventure game //
-// ------------------------------------------------ //
-// Filename: 		menu.cpp                    //
-// Created: 		04-27-15                    //
-// Description: 	Display a menu and accept   //
-// 			options                     //
-//////////////////////////////////////////////////////
+// ------------------------------------------------
+// Project Title:	Project Ysgramor
+// Author:		Joey Gliebe
+// Started:		04-06-15
+// Version:		0.0
+// Description:		A text-based adventure game
+// ------------------------------------------------
+// Filename: 		menu.cpp
+// Created: 		04-27-15
+// Description: 	Display a menu and accept
+// 			options
+// ------------------------------------------------
 
 #include <iostream>
+#include <string>
 
 void menuDisplay() // Outputs the menu
 {
@@ -31,18 +32,21 @@ void menuDisplay() // Outputs the menu
 	cout << " |                                                                                                  |" << endl;
 	cout << " |-_-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-_-|" << endl;
 	cout << " |                                                                                                  |" << endl;
-	cout << " | 1. Play                                                                                          |" << endl;
-	cout << " | 2. Exit                                                                                          |" << endl;
+	cout << " | a. Play                                                                                          |" << endl;
+	cout << " | b. Exit                                                                                          |" << endl;
 	cout << " |__________________________________________________________________________________________________|" << endl;
 
-	cout << "\n}> ";
+	cout << "\nSelect an option }> ";
 }
 
-int menuSelection(int menu_answer)
+char menuSelection(char answer)
 {
 	using namespace std;
 
-	cin >> menu_answer;
+	std::string userAnswer;
+	cin >> userAnswer;
 
-	return menu_answer;
+	answer = userAnswer[0];
+
+	return answer;
 }
