@@ -38,28 +38,36 @@ void startUp()
 	using namespace std;
 
 	clearScreen();
-	menuDisplay();
-
-	char answer;
+	mainMenuDisplay();
 
 	// ISSUE 1: else loops repeatedly when multiple incorrect responses given
-	// CAUSE: When multiple responses are given at once, it causes the system to accept multiple values, which causes it to check for both in the function
-	// SOLUTION: I made cin stream to a string variable, then set a char variable to the first character in the string array, which then would only send one value
+	// CAUSE: When multiple responses are given at once, it causes the system to accept multiple values, which
+	// 	causes it to check for both in the function
+	// SOLUTION: I made cin stream to a string variable, then set a char variable to the first character in the
+	// 	string array, which then would only send one value
+
+	char answer;
 
 	tryAgain:
 
 	answer = menuSelection(answer);
 
 	if (answer == 'a')
+	{
 		cout << "You are playing the game!! Alas, it is not existant yet...";
+	}
 	else if (answer == 'b')
-		cout << "Good bye!!";
+	{
+		// shutDown();
+	}
 	else
 	{
 		cout << "Please!  Don't do this to me; just try again:\n\n}> ";
 		goto tryAgain;
 	}
 }
+
+// void shutdown()
 
 int main()
 {

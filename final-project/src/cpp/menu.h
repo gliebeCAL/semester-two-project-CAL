@@ -1,7 +1,7 @@
 #ifndef MENU_H
 #define MENU_H
 
-void menuDisplay();
+void mainMenuDisplay();
 int menuSelection(char answer);
 
 #endif

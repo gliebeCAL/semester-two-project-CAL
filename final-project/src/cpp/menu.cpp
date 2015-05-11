@@ -14,7 +14,7 @@
 #include <iostream>
 #include <string>
 
-void menuDisplay() // Outputs the menu
+void mainMenuDisplay() // Outputs the menu
 {
 	using namespace std;
 	cout << "  __________________________________________________________________________________________________ " << endl;
@@ -30,7 +30,7 @@ void menuDisplay() // Outputs the menu
 	cout << " |     |              |  |         | |    \\   |         | |                |   \\        /  |    \\   |" << endl;
 	cout << " |     |      |_______|  |_________| |     \\  |         | |                |    \\______/   |     \\  |" << endl;
 	cout << " |                                                                                                  |" << endl;
-	cout << " |-_-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-_-|" << endl;
+	cout << " |--------------------------------------------------------------------------------------------------|" << endl;
 	cout << " |                                                                                                  |" << endl;
 	cout << " | a. Play                                                                                          |" << endl;
 	cout << " | b. Exit                                                                                          |" << endl;

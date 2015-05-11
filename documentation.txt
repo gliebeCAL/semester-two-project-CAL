@@ -147,3 +147,12 @@
 	*Created a note about the issue from 05-04-15 in main.cpp for easy visibility
 	*Fixed ISSUE 1 from 05-04-15 (To read how it was fixed, go to main.cpp and read the three comments on it)
 	*Made a change to the Makefile in order to make it more friendly if it was 'git clone'd to another computer
+05-06-15:
+	*Created a "places" folder in final-project/src/lua
+	*Creating the initial place for the game to start
+	*Writing the code for managing the location of the party and such
+05-08-15:
+	*Writing the lua file for the start location (main hub)
+	*Created other lua files for places in game (currently placeholders)
+05-11-15:
+	*Forgot to commit last week, so commiting now
