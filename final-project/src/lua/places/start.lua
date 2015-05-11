@@ -38,3 +38,5 @@ print(" |                                                                       
 print(" |  a.) Adventure out                                                                                 |")
 print(" |  b.) Purchase items and equipment                                                                  |")
 print(" |  c.) Status and Inventory                                                                          |")
+print(" |____________________________________________________________________________________________________|")
+print("\n\n Select an option }> ")

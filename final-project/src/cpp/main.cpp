@@ -54,7 +54,7 @@ void startUp()
 
 	if (answer == 'a')
 	{
-		cout << "You are playing the game!! Alas, it is not existant yet...";
+		cout << "You are playing the game!! NOTE: change this out with something else later...\n\n";
 	}
 	else if (answer == 'b')
 	{
@@ -72,6 +72,6 @@ void startUp()
 int main()
 {
 	startUp();
-
+	
 	return 0;
 }

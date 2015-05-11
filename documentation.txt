@@ -156,3 +156,5 @@
 	*Created other lua files for places in game (currently placeholders)
 05-11-15:
 	*Forgot to commit last week, so commiting now
+	*Created game.cpp
+	*Wrote start.lua
