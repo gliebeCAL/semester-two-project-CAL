@@ -20,6 +20,8 @@ extern "C"  // Include lua headers
 #include <iostream>
 #include "menu.h"
 #include "clearScreen.h"
+#include "game.h"
+#include <cstdlib> // for the exit function
 
 // ---------------------------------------------------------------------------------------------------------------------------
 // lua_State* L = luaL_newstate();	// This loads a new state
@@ -33,7 +35,7 @@ extern "C"  // Include lua headers
 // However, it is just safer to create a state for whatever function needs it, then closing it.
 // ---------------------------------------------------------------------------------------------------------------------------
 
-void startUp()
+void startUp() // performs the actions needed to begin playing
 {
 	using namespace std;
 
@@ -46,32 +48,39 @@ void startUp()
 	// SOLUTION: I made cin stream to a string variable, then set a char variable to the first character in the
 	// 	string array, which then would only send one value
 
+	// ISSUE 2: else statement was executing several times, causing some spam equivilant to the amout of white spaced words
+	// CAUSE: Since I was using std::cin to stream stdin to the string, it was conflicting with the whitespace
+	// SOLUTION: Changed std::cin to std::getline()
+
 	char answer;
 
-	tryAgain:
+TRY_AGAIN:
 
 	answer = menuSelection(answer);
 
-	if (answer == 'a')
+	if (answer == 'a') // The game is allowed to start
 	{
-		cout << "You are playing the game!! NOTE: change this out with something else later...\n\n";
+		cout << "Game initializing...\n";
 	}
-	else if (answer == 'b')
+
+	else if (answer == 'b') // Currently, I am using the very unsafe exit(); in order to exit the program.  In the future, it is necessary to change out the exit(); with something else
 	{
-		// shutDown();
+		cout << "Exiting...";
+		exit(0);
 	}
-	else
+
+	else // If any key other than the above options are pressed, it will ask to try again
 	{
-		cout << "Please!  Don't do this to me; just try again:\n\n}> ";
-		goto tryAgain;
+		cout << "INVALID; TRY AGAIN: }> ";
+		goto TRY_AGAIN;
 	}
 }
 
-// void shutdown()
-
 int main()
 {
+
 	startUp();
-	
+	beginingScene();
+
 	return 0;
 }

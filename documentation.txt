@@ -158,3 +158,16 @@
 	*Forgot to commit last week, so commiting now
 	*Created game.cpp
 	*Wrote start.lua
+05-12-15:
+	*Game can now exit from the main menu
+		*Needs to be changed out from exit() to most likely a try-catch block to be safer
+	*Reorganized lua files
+		*using locations/ instead of places/
+	*Moved the contents of mainMenuDisplay() into mainMenu.lua
+	*Fixed Issue 2
+		*changed menuSelection() to use std::getline instead of std::cin
+	*wote more in game.cpp
+		*beginingScene() has been clarified to be only run once
+		*beginingScene() now has selection
+		*functions have been written for future area (currently placeholders)
+			*void map() is bacically the location that lets you access any other location

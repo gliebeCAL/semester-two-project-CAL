@@ -11,32 +11,24 @@
 // 			options
 // ------------------------------------------------
 
+extern "C"  // Include lua headers
+{
+#include <lua.h>
+#include <lauxlib.h>
+#include <lualib.h>
+}
+
 #include <iostream>
 #include <string>
 
-void mainMenuDisplay() // Outputs the menu
+void mainMenuDisplay() // Outputs the main menu
 {
-	using namespace std;
-	cout << "  __________________________________________________________________________________________________ " << endl;
-	cout << " |                                                                                                    |" << endl;
-	cout << " |                                              PROJECT:                                              |" << endl;
-	cout << " |                                                                                                    |" << endl;
-	cout << " |  \\       /  _________  __________  ______      _____    ____          ____     ______    ______    |" << endl;
-	cout << " |   \\     /   |       |  |           |     \\    /     \\   |   \\        /   |    /      \\   |     \\   |" << endl;
-	cout << " |    \\   /    |          |           |      |  /       \\  |    \\      /    |   /        \\  |      |  |" << endl;
-	cout << " |     \\ /     |          |           |      | |         | |     \\    /     |  |          | |      |  |" << endl;
-	cout << " |      |      |_______   |  _______  |_____/  |_________| |      \\__/      |  |          | |_____/   |" << endl;
-	cout << " |      |              |  |         | |   \\    |         | |                |  |          | |   \\     |" << endl;
-	cout << " |      |              |  |         | |    \\   |         | |                |   \\        /  |    \\    |" << endl;
-	cout << " |      |      |_______|  |_________| |     \\  |         | |                |    \\______/   |     \\   |" << endl;
-	cout << " |                                                                                                    |" << endl;
-	cout << " |----------------------------------------------------------------------------------------------------|" << endl;
-	cout << " |                                                                                                    |" << endl;
-	cout << " | a. Play                                                                                            |" << endl;
-	cout << " | b. Exit                                                                                            |" << endl;
-	cout << " |____________________________________________________________________________________________________|" << endl;
+	lua_State* L = luaL_newstate();
+	luaL_openlibs(L);
+	luaL_dofile(L,"./mainmenu.lua");
+	lua_close(L);
 
-	cout << "\n  Select an option }> ";
+	std::cout << "\nSELECTION: }> ";
 }
 
 char menuSelection(char answer)
@@ -44,7 +36,7 @@ char menuSelection(char answer)
 	using namespace std;
 
 	std::string userAnswer;
-	cin >> userAnswer;
+	std::getline(std::cin, userAnswer);
 
 	answer = userAnswer[0];
 
