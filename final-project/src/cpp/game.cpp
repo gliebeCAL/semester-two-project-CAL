@@ -2,7 +2,7 @@
 // Project Title:	Project Ysgramor
 // Author:		Joey Gliebe
 // Started:		04-06-15
-// Version:		0.0
+// Version:		0.1
 // Description:		A text-based adventure game
 // ------------------------------------------------
 // Filename: 		game.cpp
@@ -70,17 +70,20 @@ TRYAGAIN:
 
 	if (answer == 'a') // go to map.lua
 	{
-		std::cout << "You go to the map...";
+		std::cout << "You go to the map... Press <Enter>";
+		std::cin.ignore();
 	}
 
 	else if (answer == 'b') // go to store.lua
 	{
-		std::cout << "You go to the store...";
+		std::cout << "You go to the store... Press <Enter>";
+		std::cin.ignore();
 	}
 
 	else if (answer == 'c')
 	{
-		std::cout << "You check your status and inventory";
+		std::cout << "You check your status and inventory... Press <Enter>";
+		std::cin.ignore();
 	}
 
 	else

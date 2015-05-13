@@ -164,6 +164,7 @@
 	*Reorganized lua files
 		*using locations/ instead of places/
 	*Moved the contents of mainMenuDisplay() into mainMenu.lua
+		*mainMenuDisplay() now outputs the contents of mainMenu.lua
 	*Fixed Issue 2
 		*changed menuSelection() to use std::getline instead of std::cin
 	*wote more in game.cpp
@@ -171,3 +172,10 @@
 		*beginingScene() now has selection
 		*functions have been written for future area (currently placeholders)
 			*void map() is bacically the location that lets you access any other location
+05-13-15:
+	*Future consideration:
+		*Consider changing the way a selection is made in order to make it more moduler through lua
+	*Created battle.h
+	*Added std::cin.ignore() to make the player press <Enter> to continue output
+		*This gives the player time to read the previous screen's input before continuing
+	*Changed version number from 0.0 to 0.1

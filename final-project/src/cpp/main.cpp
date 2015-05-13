@@ -2,7 +2,7 @@
 // Project Title:	Project Ysgramor
 // Author:		Joey Gliebe
 // Started:		04-06-15
-// Version:		0.0
+// Version:		0.1
 // Description:		A text-based adventure game
 // ------------------------------------------------
 // Filename: 		main.cpp
@@ -60,7 +60,8 @@ TRY_AGAIN:
 
 	if (answer == 'a') // The game is allowed to start
 	{
-		cout << "Game initializing...\n";
+		cout << "Game initializing... Please hit <Enter> to continue...\n";
+		cin.ignore();
 	}
 
 	else if (answer == 'b') // Currently, I am using the very unsafe exit(); in order to exit the program.  In the future, it is necessary to change out the exit(); with something else
