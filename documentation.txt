@@ -179,3 +179,5 @@
 	*Added std::cin.ignore() to make the player press <Enter> to continue output
 		*This gives the player time to read the previous screen's input before continuing
 	*Changed version number from 0.0 to 0.1
+05-15-15:
+	*Computer issues have resulted in a lack of work today
