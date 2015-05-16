@@ -35,6 +35,11 @@ extern "C"  // Include lua headers
 // However, it is just safer to create a state for whatever function needs it, then closing it.
 // ---------------------------------------------------------------------------------------------------------------------------
 
+void shutDown()
+{
+	std::exit(0);
+}
+
 void startUp() // performs the actions needed to begin playing
 {
 	using namespace std;
@@ -67,7 +72,7 @@ TRY_AGAIN:
 	else if (answer == 'b') // Currently, I am using the very unsafe exit(); in order to exit the program.  In the future, it is necessary to change out the exit(); with something else
 	{
 		cout << "Exiting...";
-		exit(0);
+		shutDown();
 	}
 
 	else // If any key other than the above options are pressed, it will ask to try again

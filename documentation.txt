@@ -180,4 +180,6 @@
 		*This gives the player time to read the previous screen's input before continuing
 	*Changed version number from 0.0 to 0.1
 05-15-15:
-	*Computer issues have resulted in a lack of work today
+	*Computer issues have resulted in a lack of progress today
+	*However, I was able to get things working enough to change how the exiting works
+		*calls shutDown() to quit the game
