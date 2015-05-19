@@ -183,3 +183,5 @@
 	*Computer issues have resulted in a lack of progress today
 	*However, I was able to get things working enough to change how the exiting works
 		*calls shutDown() to quit the game
+05-19-15:
+	*Class time was used helping Mr. Braught with Bandit 16 to 17.  As a result, no work was done this class period.
