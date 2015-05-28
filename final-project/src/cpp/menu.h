@@ -3,5 +3,6 @@
 
 void mainMenuDisplay();
 int menuSelection(char answer);
+void inventoryStatusDisplay();
 
 #endif

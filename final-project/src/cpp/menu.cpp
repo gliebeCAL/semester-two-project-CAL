@@ -11,7 +11,9 @@
 // 			options
 // ------------------------------------------------
 
-extern "C"  // Include lua headers
+// Headers-----------------------------------------
+
+extern "C"
 {
 #include <lua.h>
 #include <lauxlib.h>
@@ -20,6 +22,15 @@ extern "C"  // Include lua headers
 
 #include <iostream>
 #include <string>
+#include <cstdlib>
+
+// End Headers-------------------------------------
+
+extern int g_partyCurrentHealth;
+extern int g_partyMaxHealth;
+extern int g_partyMoney;
+extern int g_partyArmorStatus;
+extern int g_partyPotionCount;
 
 void mainMenuDisplay() // Outputs the main menu
 {
@@ -31,14 +42,42 @@ void mainMenuDisplay() // Outputs the main menu
 	std::cout << "\nSELECTION: }> ";
 }
 
-char menuSelection(char answer)
+char menuSelection(char answer) // Used to grab the player's selection
 {
-	using namespace std;
-
 	std::string userAnswer;
 	std::getline(std::cin, userAnswer);
 
 	answer = userAnswer[0];
 
 	return answer;
+}
+
+void inventoryStatusDisplay() // Displays Inventory and Current stats/equipment
+{
+	std::string armorType;
+	if (g_partyArmorStatus == 0)
+	{
+		armorType = "Battered Travel Armor";
+	}
+	
+	else if (g_partyArmorStatus == 1)
+	{
+		armorType = "Decent Traveling Armor";
+	}
+	
+	else if (g_partyArmorStatus == 2)
+	{
+		armorType = "Resilent Steel Armor";
+	}
+	
+	else
+	{
+		std::cout << "ERROR ERROR: Armor Value broken!  Exiting...";
+		std::exit(0);
+	}
+
+	std::cout << "Health: " << g_partyCurrentHealth << "/" << g_partyMaxHealth;
+	std::cout << "\n\nGold: " << g_partyMoney;
+	std::cout << "\n\nArmor: " << armorType;
+	std::cin.ignore();
 }

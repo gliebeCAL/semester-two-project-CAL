@@ -12,6 +12,8 @@
 
 // The following code uses ncurses to clear the screen. BORROWED FROM Duoas at <http://www.cplusplus.com/articles/4z18T05o/>
 
+// Headers-----------------------------------------
+
 #include <ncurses.h>
 #include <unistd.h>
 #include <term.h>

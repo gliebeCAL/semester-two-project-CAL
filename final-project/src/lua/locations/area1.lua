@@ -5,18 +5,16 @@
 -- Version:		0.0
 -- Description:		A text-based adventure game
 -- ------------------------------------------------
--- Filename: 		town.lua
+-- Filename: 		area1.lua
 -- Created: 		05-06-15
--- Description: 	The town
+-- Description: 	The first area
 -- ------------------------------------------------
 
 print("  ____________________________________________________________________________________________________ ")
 print(" |                                                                                                    |")
-print(" |  Walking back into town, things look the same as before.  Things must not change much here...      |")
+print(" |  The forest is full of green and happiness, yet you feel that not all is so peaceful within.       |")
 print(" |                                                                                                    |")
-print(" |  What will you do?                                                                                 |")
-print(" |                                                                                                    |")
-print(" |  a. Adventure out                                                                                  |")
-print(" |  b. Purchase items and equipment                                                                   |")
-print(" |  c. Show Status/Inventory                                                                          |")
+print(" |  a. Search for wild beasts to practice against                                                     |")
+print(" |  b. Check your status and inventory                                                                |")
+print(" |  c. Depart for a new location                                                                      |")
 print(" |____________________________________________________________________________________________________|")

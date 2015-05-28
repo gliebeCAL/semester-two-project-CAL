@@ -10,7 +10,9 @@
 // Description: 	main loop of the program
 // ------------------------------------------------
 
-extern "C"  // Include lua headers
+// Headers-----------------------------------------
+
+extern "C"
 {
 #include <lua.h>
 #include <lauxlib.h>
@@ -18,10 +20,19 @@ extern "C"  // Include lua headers
 }
 
 #include <iostream>
+#include <cstdlib>
 #include "menu.h"
 #include "clearScreen.h"
 #include "game.h"
-#include <cstdlib> // for the exit function
+#include "battle.h"
+
+// Global Variables--------------------------------
+
+int g_partyCurrentHealth(100);
+int g_partyMaxHealth(100);
+int g_partyMoney(1000);
+int g_partyArmorStatus(0);
+int g_partyPotionCount(0);
 
 // ---------------------------------------------------------------------------------------------------------------------------
 // lua_State* L = luaL_newstate();	// This loads a new state
@@ -40,10 +51,8 @@ void shutDown()
 	std::exit(0);
 }
 
-void startUp() // performs the actions needed to begin playing
+void startUp()
 {
-	using namespace std;
-
 	clearScreen();
 	mainMenuDisplay();
 
@@ -63,21 +72,21 @@ TRY_AGAIN:
 
 	answer = menuSelection(answer);
 
-	if (answer == 'a') // The game is allowed to start
+	if (answer == 'a') // Start Game
 	{
-		cout << "Game initializing... Please hit <Enter> to continue...\n";
-		cin.ignore();
+		std::cout << "Game initializing... Please hit <Enter> to continue...\n";
+		std::cin.ignore();
 	}
 
-	else if (answer == 'b') // Currently, I am using the very unsafe exit(); in order to exit the program.  In the future, it is necessary to change out the exit(); with something else
+	else if (answer == 'b') // Quit game
 	{
-		cout << "Exiting...";
+		std::cout << "Exiting...";
 		shutDown();
 	}
 
 	else // If any key other than the above options are pressed, it will ask to try again
 	{
-		cout << "INVALID; TRY AGAIN: }> ";
+		std::cout << "INVALID; TRY AGAIN: }> ";
 		goto TRY_AGAIN;
 	}
 }
@@ -86,7 +95,7 @@ int main()
 {
 
 	startUp();
-	beginingScene();
+	gameStart();
 
 	return 0;
 }

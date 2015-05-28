@@ -185,3 +185,14 @@
 		*calls shutDown() to quit the game
 05-19-15:
 	*Class time was used helping Mr. Braught with Bandit 16 to 17.  As a result, no work was done this class period.
+05-20-15 through 05-27-15
+	*I have simplified the battle system to accomidate for a lack of time
+		*Instead of it being interactive, it is more like an text adventure game of the past
+		*You win or lose based on what you have bought
+	*Removed some modularity
+		*Too much modularity to properly handle in the alloted time
+		*The menus and the locations are editable by the player though Lua
+	*Added global variables to handle what the lua files were going to do
+		*Handles money, current armor, potion amount
+	*Made the game functional
+	*Added a secret in the game
